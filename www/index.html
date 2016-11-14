@@ -75,6 +75,21 @@
             <div class="col">{{student.dob|date: 'MMM dd yyyy'}}</div>
             <div class="col">{{student.age}}</div>
           </div>
+
+
+          <div ng-controller="GMITController">
+          <div class="row">
+            <div class="col">Name</div>
+            <div class="col">Address</div>
+            <div class="col">Founded</div>
+            <div class="col">Age</div>
+          </div>
+          <div class="row">
+            <div class="col">{{GMIT.name}}</div>
+            <div class="col">{{GMIT.address}}</div>
+            <div class="col">{{GMIT.founded|date: 'MMM dd yyyy'}}</div>
+            <div class="col">{{GMIT.age}}</div>
+          </div>
           
           
         </div>
