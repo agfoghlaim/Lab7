@@ -31,14 +31,36 @@
 
     <!-- your app's js -->
     <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/services.js"></script>
   </head>
-  <body ng-app="starter">
+  <body ng-app="app">
 
     <ion-pane>
       <ion-header-bar class="bar-stable">
-        <h1 class="title">Ionic Blank Starter</h1>
+        <h1 class="title">Lab 7</h1>
       </ion-header-bar>
       <ion-content>
+        <div ng-controller="ctrl">
+          <h2>Age Next Year</h2>
+          <p>
+            Enter Age:
+            <input ng-model="age">
+              {{age}}
+              <button ng-click="nextAge(age)">next year</button>
+          </p>
+          <p>{{newAge}}</p>
+
+
+           <h2>Age Next Year (service)</h2>
+          <p>
+            Enter Age:
+            <input ng-model="age2">
+              {{age2}}
+              <button ng-click="nextYear2(age2)">next year</button>
+          </p>
+          <p>{{newAge2}}</p>
+        </div>
       </ion-content>
     </ion-pane>
   </body>
