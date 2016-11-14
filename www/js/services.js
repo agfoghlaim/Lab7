@@ -7,3 +7,10 @@ app.service('ageService', function(){
 	}
 	}
 });
+
+app.service('studentAgeService', function(){
+ this.getAge = function(dob){
+ 	var now = new Date().getFullYear();
+ 	return now - new Date(dob).getFullYear();
+ }
+});
